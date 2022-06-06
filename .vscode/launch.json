@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Zephyr",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/zephyr/zephyr.elf",
+            "serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "nrf52",
+            "interface": "swd",
+            "armToolchainPath": "${env:GNUARMEMB_TOOLCHAIN_PATH}/bin/",
+            "ipAddress": null, 
+            "serialNumber": null,
+            "preLaunchTask": "Build and flash"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "env": {
+        "zephyrSourcePath": "${ZEPHYR_BASE}",
+        "armCompilerPath": "${GNUARMEMB_TOOLCHAIN_PATH}"
+    },
+    "configurations": [
+        {
+            "name": "Zepyhr",
+            "includePath": [
+                "${workspaceFolder}/src/inc/**",
+                "${zephyrSourcePath}/include/",
+                "${zephyrSourcePath}/lib/libc/minimal/include/",
+                "${zephyrSourcePath}/arch/arm/include/",
+                "${zephyrSourcePath}/include/arch/arm/aarch32/**",
+                "${workspaceFolder}/build/zephyr/include/generated/"
+            ],
+            "compilerPath": "${armCompilerPath}/bin/arm-none-eabi-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
